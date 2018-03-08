@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 source ~/.bash_profile
 
-echo $1
-sshpass -p $password ssh -oStrictHostKeyChecking=no "chenqianli@$1"
+echo "login: $1"
+sshpass -p $password ssh -oStrictHostKeyChecking=no "${USER}@$1"
